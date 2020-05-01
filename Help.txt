@@ -3,7 +3,7 @@ RSA.py dans "C:\Users\%username%\AppData\Local\Programs\Python\Python38-32\Lib".
 préalablement installer python 3.
 
 "C:\Users\%username%\AppData\Local\Programs\Python\Python38-32\Lib" Attention ! Python38-32 dépend 
-de le version de python que vous utilisez
+de la version de python que vous utilisez.
 
 l'algorythme de cryptage RSA est une technique de cryptographie asymétrique basé sur l'arythmétique modulaire.
 
@@ -13,8 +13,8 @@ RSA est formé des trois initiales de ces trois inventeurs (Ronald Rivest, Adi S
 La Cryptographie asymétrique c'est quoi ?
 La Cryptographie asymétrique est un domaine de la cryptographie qui fonctionne grâce à deux clés différentes,
 la clé publique et la clè privée.
-La clé publique peut être partager, elle sert uniquement à crypter les donner.
-La clé privée quand à elle, ne doit pas être publiée, elle sert à décrypté les données cryptaient par 
+La clé publique peut être partagée, elle sert uniquement à crypter les données.
+La clé privée quant à elle, ne doit pas être publiée, elle sert à décrypter les données cryptaient par 
 la clé publique.
 
 Comment utiliser RSA-algorythme-module ?
@@ -22,14 +22,14 @@ Comment utiliser RSA-algorythme-module ?
 (Attention ! il faut impérativement que le module soit placé dans 
 "C:\Users\%username%\AppData\Local\Programs\Python\Python38-32\Lib" sinon cela ne marchera pas.)
 
-Il faut d'abord commancer par importer le modul dans votre code, ou votre shell.
+Il faut d'abord commancer par importer le module dans votre code, ou votre shell.
 Pour cela tapez: import RSA
 Pour générer les clés tapez: RSA.generator()
 Pour crypter une phrase: RSA.en_crypte(clé, publique)
 Pour décrypter une phrase: RSA.de_crypt(clé, privée)
 
-Dautres fonction sont disponible, elle sont n'écessaire au bon fonctionement du module.
-Cependant vous pouvez vous en servire:
+Dautres fonctions sont disponibles, elles sont nécessaire au bon fonctionement du module.
+Cependant vous pouvez vous en servir:
 RSA.getFactors(un nombre) permet d'afficher tout les diviseurs de ce nombre.
 RSA.pgcd(nombre1, nombre2) permet d'afficher le plus grand diviseur commun à ces deux nombres.
 RSA.get_p_q() permet de générer un nombre entier aléatoire entre 100 et 999
