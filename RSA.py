@@ -15,7 +15,8 @@ def getFactors(n):
             factors.append(i)
     return factors
 
-def get_p_q(a):
+def get_p_q():
+	a = randint(100, 999)
 	while True:
 		if getFactors(a) == [1, a]:
 			return a
@@ -23,8 +24,7 @@ def get_p_q(a):
 		a = randint(100, 999)   
 
 def generator():
-	p1,q1 = randint(100, 999), randint(100, 999)
-	p,q = get_p_q(p1),get_p_q(q1)
+	p,q = get_p_q(),get_p_q()
 	#p,q = 137, 751
 	n = p*q
 	pn = (p-1)*(q-1)
