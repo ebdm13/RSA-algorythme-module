@@ -65,6 +65,7 @@ def en_crypt(e, n):
 		crypt_d.append(pow(d[int(v)], e)%n)
 		v = v + 1
 	print(crypt_d)
+	d = []
 
 def de_crypt(d, n):
 	print("Entrer le message à décrypter (s'éparer les nombres par des virgules)")
@@ -82,3 +83,4 @@ def de_crypt(d, n):
 		j.append(chr(i))
 	j = ''.join(j)
 	print(j)
+	j = []
